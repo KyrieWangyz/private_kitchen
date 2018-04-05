@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/r"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:weightSum="1">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/text_image"
+    android:src="@drawable/kfc1"
+    android:adjustViewBounds="true"
+    android:scaleType="fitXY"
+
+     />
+
+</LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_vegetable"
+        android:textSize="35dp"
+        android:textColor="#333333"
+        android:text="这道菜名字"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#404040"
+        android:text="  这里就是要显示的内容，看到这段话，就是说明你还没有成功，继续加油,反正就是一大段比例巴拉哔哩吧啦哇啦啦乌拉拉哇你吗，哔哩吧啦有的没有的一大段一直在哔哔，看到这段就是你还没成功"/>
+    </RelativeLayout>

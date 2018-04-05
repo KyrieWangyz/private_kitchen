@@ -1,0 +1,66 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/picture"
+        android:src="@drawable/food" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:text="甜心蛋糕"
+        android:textSize="35dp"
+        android:layout_below="@+id/picture"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="该甜品很好吃，也很好做，推荐你来学"
+        android:textSize="20dp"
+       android:layout_below="@+id/textView2"/>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_below="@+id/textView3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacher"
+        android:text="讲师：    "
+        android:textSize="20dp"
+        android:layout_below="@+id/textView4"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/default_user_avatar"
+        android:layout_toRightOf="@+id/teacher"
+        android:layout_below="@+id/textView4"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="王允璋老教授"
+        android:layout_below="@+id/textView4"
+        android:layout_toRightOf="@+id/icon"/>
+    </RelativeLayout>
+</LinearLayout>

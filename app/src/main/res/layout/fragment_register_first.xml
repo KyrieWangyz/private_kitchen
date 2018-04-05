@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/satu"
+        android:text="请输入账户信息"
+        android:textSize="25dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#443C33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_alignLeft="@+id/satu"
+
+        android:layout_marginTop="238dp"
+        android:textSize="20dp"
+        android:id="@+id/yourid"
+        android:hint="用户名"
+        android:textColorHint="#CCCCCC"
+
+        android:layout_width="338dp"
+        android:layout_height="wrap_content" />
+    <EditText
+
+        android:layout_marginTop="328dp"
+        android:textColorHint="#CCCCCC"
+        android:layout_alignLeft="@+id/yourid"
+        android:textSize="20dp"
+        android:hint="密码"
+        android:id="@+id/yourpassword"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_below="@+id/yourpassword"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/next"
+        android:src="@mipmap/register_btn_next"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+</RelativeLayout>

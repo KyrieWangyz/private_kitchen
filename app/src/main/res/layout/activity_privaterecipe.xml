@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.youdu.ButtonTest.ObservableScrollView
+
+        android:id="@+id/main"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/top"
+            android:background="@drawable/mrtj"
+            android:layout_height="220dp"
+            android:layout_width="match_parent"
+             />
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/nav_return"
+                android:layout_width="28dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:layout_marginTop="73dp"
+                android:textSize="33sp"
+            android:text="个人食谱"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20sp"
+                android:layout_below="@+id/top"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="迎合你的口味"
+                android:textColor="#443C33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginTop="60dp"
+                android:layout_below="@+id/top"
+                android:id="@+id/number1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/grcp1"
+                        android:src="@drawable/grcp1"
+                        android:layout_width="180dp"
+                        android:layout_height="152dp" />
+                    <TextView
+                        android:textSize="20sp"
+                        android:text="口水鸡"
+                        android:layout_below="@+id/grcp1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/grcp11"
+                        android:id="@+id/grcp11"
+                        android:layout_width="76dp"
+                        android:layout_height="152dp" />
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:textSize="20sp"
+                        android:text="鲈鱼"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/grcp11" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/grcp13"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/grcp13"
+                        android:layout_width="76dp"
+                        android:layout_height="152dp" />
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:textSize="20sp"
+                        android:layout_below="@+id/grcp13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="白"
+                        />
+                </RelativeLayout>
+
+                
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@+id/number1"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/viewfinder_mask"
+                    android:layout_width="330dp"
+                    android:layout_height="1dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/number1"
+                android:id="@+id/number4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#443C33"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="30dp"
+                    android:text="呵护你的健康"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_below="@+id/number4"
+                android:id="@+id/number5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+
+                        android:src="@drawable/grcp21"
+                        android:id="@+id/grcp21"
+                        android:layout_width="160dp"
+                        android:layout_height="140dp" />
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/grcp21"
+                        android:textSize="20sp"
+                        android:text="高血压推荐果蔬"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="200dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/grcp22"
+                        android:id="@+id/grcp22"
+                        android:layout_width="160dp"
+                        android:layout_height="140dp" />
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/grcp22"
+                        android:textSize="20sp"
+                        android:text="高血压菜谱"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@+id/number5"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/viewfinder_mask"
+                    android:layout_width="330dp"
+                    android:layout_height="1dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/number2"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/number5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="#443C33"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="30dp"
+                    android:text="生活不只有大鱼大肉，还有蔬菜粗粮"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_below="@+id/number2"
+                android:id="@+id/guoshu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:id="@+id/number3"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <ImageView
+
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/grcp8"
+                    android:src="@drawable/grcp8"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp" />
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/grcp8"
+                    android:text="每日果蔬推荐"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/number3"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/grcp9"
+                        android:src="@drawable/grcp9"
+                        android:layout_width="160dp"
+                        android:layout_height="120dp" />
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/grcp9"
+                        android:text="每日粗粮推荐"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@+id/guoshu"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/viewfinder_mask"
+                    android:layout_width="330dp"
+                    android:layout_height="1dp" />
+            </RelativeLayout>
+            <HorizontalScrollView
+                android:layout_below="@+id/guoshu"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="10dp" >
+
+                    <GridView
+                        android:id="@+id/grid"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:numColumns="auto_fit"
+                        android:stretchMode="spacingWidthUniform" >
+                    </GridView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+        
+        
+    </com.youdu.ButtonTest.ObservableScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/picture"
+            android:src="@drawable/food" />
+
+<RelativeLayout
+    android:id="@+id/mainre"
+    android:layout_alignTop="@+id/picture"
+    android:layout_alignBottom="@+id/picture"
+    android:layout_toRightOf="@+id/picture"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:id="@+id/name"
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="甜心蛋糕"
+    android:textSize="20dp"/>
+</RelativeLayout>
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:src="@color/color_cccccc"
+            android:layout_below="@+id/mainre"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="320dp"
+            android:layout_height="1dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

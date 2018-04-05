@@ -1,0 +1,124 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photo_view"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/default_user_avatar"
+        />
+    <TextView
+        android:id="@+id/name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="克利夫兰老实人"
+        android:textColor="@color/color_333333"
+        android:textSize="30dp"
+       android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/vip"
+        android:layout_toStartOf="@+id/vip" />
+    <TextView
+        android:id="@+id/address"
+        android:text="厦门大学嘉庚学院"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/photo_view"
+        android:layout_alignLeft="@+id/name_view"
+        android:layout_alignStart="@+id/name_view" />
+    <ImageView
+        android:id="@+id/vip"
+        android:background="@drawable/viplogo2"
+        android:layout_width="35dp"
+        android:layout_height="27dp"
+        android:layout_alignTop="@+id/name_view"
+        android:layout_toRightOf="@+id/editkdd"
+        android:layout_toEndOf="@+id/editkdd" />
+    <TextView
+        android:id="@+id/kdd"
+        android:text="快递点"
+        android:textSize="25dp"
+        android:layout_width="85dp"
+        android:layout_height="30dp"
+        android:textColor="@color/color_333333"
+
+
+
+        android:layout_alignBaseline="@+id/editkdd"
+        android:layout_alignBottom="@+id/editkdd"
+        android:layout_alignLeft="@+id/photo_view"
+         />
+    <TextView
+        android:id="@+id/time"
+        android:text="时间"
+        android:textSize="25dp"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:textColor="@color/color_333333"
+
+
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/address"
+        android:layout_toStartOf="@+id/address" />
+    <TextView
+        android:id="@+id/deadline"
+        android:text="期限"
+        android:textSize="25dp"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:textColor="@color/color_333333"
+        android:layout_alignBaseline="@+id/editdeadline"
+        android:layout_alignBottom="@+id/editdeadline"
+        android:layout_alignLeft="@+id/time"
+        android:layout_alignStart="@+id/time" />
+    <EditText
+        android:id="@+id/editkdd"
+        android:hint="取件地点"
+        android:textSize="25dp"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:textColor="@color/color_333333"
+        android:layout_marginBottom="58dp"
+        android:layout_alignBottom="@+id/time"
+        android:layout_toRightOf="@+id/kdd"
+        android:layout_toEndOf="@+id/kdd"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+    <EditText
+        android:id="@+id/edittime"
+        android:hint="收到短信的日期"
+        android:textSize="25dp"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+
+        android:textColor="@color/color_333333"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editkdd"
+        android:layout_alignStart="@+id/editkdd" />
+    <EditText
+        android:id="@+id/editdeadline"
+        android:hint="截止日期"
+        android:textSize="25dp"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/color_333333"
+        android:layout_below="@+id/edittime"
+        android:layout_alignLeft="@+id/edittime"
+        android:layout_alignStart="@+id/edittime" />
+    <ImageView
+        android:id="@+id/input"
+        android:src="@mipmap/login_input_disable"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp" />
+
+</RelativeLayout>

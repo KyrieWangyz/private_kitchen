@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/dayofweek"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/monday"
+            android:background="@mipmap/suggest_select"
+            android:layout_marginLeft="38dp"
+
+
+            android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/monday1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一"
+            android:textSize="25dp"
+            android:layout_centerInParent="true"
+           />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/tuesday"
+
+
+        android:layout_toRightOf="@+id/monday"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/tuesday1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="二"
+            android:textSize="25dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent ="true"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/wednesday"
+
+
+        android:layout_toRightOf="@+id/tuesday"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/wednesday1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="三"
+            android:textSize="25dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent ="true"/>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/thursday"
+
+
+        android:layout_toRightOf="@+id/wednesday"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/thursday1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="四"
+            android:textSize="25dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent ="true"/>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/firsday"
+
+
+        android:layout_toRightOf="@+id/thursday"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/firsday1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="五"
+            android:textSize="25dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent ="true"/>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/saturday"
+
+
+        android:layout_toRightOf="@+id/firsday"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/saturday1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="六"
+            android:textSize="25dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent ="true"/>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/sunday"
+
+
+        android:layout_toRightOf="@+id/saturday"
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/sunday1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日"
+            android:textSize="25dp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent ="true"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:background="#CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="?android:attr/listDivider"
+        />
+    <ImageView
+        android:background="#CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+        
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

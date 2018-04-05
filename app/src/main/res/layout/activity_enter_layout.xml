@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg">
+    <TextView
+        android:id="@+id/srcf"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="151dp"
+        android:text="私人厨房"
+        android:textSize="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="用户名"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#CCCCCC"
+        android:id="@+id/login_name"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/srcf"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textColorHint="#CCCCCC"
+        android:layout_centerHorizontal="true"
+        android:hint="密码"
+        android:id="@+id/login_password"
+        android:layout_below="@+id/login_name"
+        android:layout_marginTop="40dp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginLeft="73dp"
+        android:layout_below="@+id/login_password"
+        android:src="@mipmap/login_btn_register"
+        android:id="@+id/register_img"
+        android:layout_width="72dp"
+        android:layout_height="72dp" />
+    <ImageView
+        android:layout_marginLeft="75dp"
+        android:layout_toRightOf="@+id/register_img"
+        android:layout_below="@+id/login_password"
+        android:src="@mipmap/login_btn_login"
+        android:id="@+id/login_img"
+        android:layout_width="72dp"
+        android:layout_height="72dp" />
+
+
+</RelativeLayout>

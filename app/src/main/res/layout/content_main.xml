@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/bg_circle"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <LinearLayout
+                android:id="@+id/already"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="已烹饪食谱"
+                    android:textColor="#000000"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/re_already"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/collection"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:orientation="horizontal">
+
+                <ImageView
+
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="已收藏食谱"
+                    android:textColor="#000000"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/re_collection"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"></android.support.v7.widget.RecyclerView>
+          <android.support.v7.widget.RecyclerView
+              android:id="@+id/circle_friend"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+          </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@mipmap/iconbackground">
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/im0"
+            android:layout_marginTop="91dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/cookedrecipes"
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/recipe_icon_step"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:textColor="#443C33"
+            android:layout_centerVertical="true"
+            android:text="已烹饪食谱"
+            android:layout_toRightOf="@+id/img"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/calculator_btn_more"
+            android:layout_width="12dp"
+            android:layout_height="24dp" />
+    </RelativeLayout>
+    <ImageView
+        android:src="#EFEFEF"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+    <ListView
+        android:id="@+id/cookedlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+    <ImageView
+        android:src="#EFEFEF"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+    <RelativeLayout
+        android:id="@+id/collectedrecipes"
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/personalcenter_icon_liked"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:textColor="#443C33"
+            android:layout_centerVertical="true"
+            android:text="已收藏食谱"
+            android:layout_toRightOf="@+id/img2"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/calculator_btn_more"
+            android:layout_width="12dp"
+            android:layout_height="24dp" />
+    </RelativeLayout>
+    <ImageView
+        android:src="#EFEFEF"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+    <ListView
+        android:id="@+id/collectlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+
+</LinearLayout>

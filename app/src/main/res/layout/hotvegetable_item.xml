@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/recycle_img"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/im1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:layout_alignTop="@+id/recycle_img"
+            android:layout_alignBottom="@+id/recycle_img"
+            android:layout_toRightOf="@id/recycle_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/recycle_text"
+                android:textColor="#443C33"
+                android:textSize="18dp"
+                android:text="菜名"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentBottom="true"
+                android:text="时长："
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:id="@+id/time1"
+                android:layout_toRightOf="@+id/time"
+                android:text="耗时"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginLeft="137dp"
+                android:text="难度："
+                android:id="@+id/difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/difficulty"
+                android:layout_width="45dp"
+                android:layout_height="15dp">
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

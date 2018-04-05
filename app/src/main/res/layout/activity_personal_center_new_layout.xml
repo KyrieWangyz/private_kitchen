@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <com.youdu.ButtonTest.ObservableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@mipmap/iconbackground">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:src="@drawable/im0"
+            android:layout_marginTop="91dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/id"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/icon"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text="克利夫兰老实人"
+            android:textColor="@color/color_666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/callname"
+            android:layout_below="@id/id"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:textColor="@color/color_999999"
+            android:text="称号：星级厨师"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/callname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/fansR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/fans"
+            android:textSize="18sp"
+            android:text="粉丝"
+            android:textColor="@color/color_999999"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@id/fans"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="5dp"
+            android:text="34"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_toRightOf="@+id/fansR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/attention"
+                android:textSize="18sp"
+                android:text="关注"
+                android:textColor="@color/color_999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toRightOf="@id/attention"
+                android:layout_marginLeft="5dp"
+                android:text="25"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        </RelativeLayout>
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/personalcenter_icon_set"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/personalcenter_icon_set"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/cookedrecipes"
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/recipe_icon_step"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textColor="#443C33"
+                android:layout_centerVertical="true"
+                android:text="已烹饪食谱"
+                android:layout_toRightOf="@+id/img"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/calculator_btn_more"
+                android:layout_width="12dp"
+                android:layout_height="24dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/one"
+            android:layout_below="@+id/cookedrecipes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="#EFEFEF"
+                android:layout_width="match_parent"
+                android:layout_height="3dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/one"
+            android:id="@+id/collectedrecipes"
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/personalcenter_icon_liked"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textColor="#443C33"
+                android:layout_centerVertical="true"
+                android:text="已收藏食谱"
+                android:layout_toRightOf="@+id/img2"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/calculator_btn_more"
+                android:layout_width="12dp"
+                android:layout_height="24dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/two"
+            android:layout_below="@+id/collectedrecipes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="#EFEFEF"
+                android:layout_width="match_parent"
+                android:layout_height="3dp" />
+        </LinearLayout>
+        <ImageView
+            android:src="#EFEFEF"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/mid_linear"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rollviewpager"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <RelativeLayout
+            android:id="@+id/getExp_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/getExp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="厨艺界"
+                android:textColor="#443C33"
+                />
+
+            <View
+                android:id="@+id/getExp_line"
+                android:layout_width="120dp"
+                android:layout_height="3dp"
+                android:background="#FFF097"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+               />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/histroy_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/histroy_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="厨友圈"
+                android:textColor="@color/colorUnclick"
+                />
+
+            <View
+                android:id="@+id/histroy_line"
+                android:layout_width="26dp"
+                android:layout_height="3dp"
+                android:background="@color/colorUnclick"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="195dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon1"
+                android:src="@drawable/texticon1"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+
+
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:src="@mipmap/nav_like_pre"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="22dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textColor="#6699FF"
+                android:id="@+id/name"
+                android:layout_toRightOf="@+id/icon1"
+                android:text="巴哈马先生"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#666666"
+                android:id="@+id/text1"
+                android:layout_toRightOf="@+id/icon1"
+                android:layout_below="@id/name"
+                android:text="闲来没事，做了道烤鸭，求点赞"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/pi1"
+                android:layout_toRightOf="@+id/icon1"
+                android:layout_below="@+id/text1"
+                android:background="@drawable/food6"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/food1"
+                android:layout_below="@id/text1"
+                android:layout_toRightOf="@+id/pi1"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:layout_below="@+id/pi1"
+                android:layout_toRightOf="@id/icon1"
+                android:layout_marginTop="20dp"
+                android:text="2分钟前"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginTop="13dp"
+                android:layout_below="@id/pi1"
+                android:layout_toRightOf="@+id/icon1"
+                android:layout_marginLeft="200dp"
+                android:src="@drawable/pinglun1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:src="#CCCCCC"
+            android:layout_width="320dp"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="195dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon2"
+                android:src="@drawable/texticon4"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <ImageView
+                android:layout_marginTop="3dp"
+                android:src="@mipmap/nav_like"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="22dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:textColor="#6699FF"
+                android:id="@+id/name2"
+                android:layout_toRightOf="@+id/icon2"
+                android:text="永远的18"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#666666"
+                android:id="@+id/text2"
+                android:layout_toRightOf="@+id/icon2"
+                android:layout_below="@id/name2"
+                android:text="今天靠这手艺套住老公的胃，快夸我"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+
+
+            <ImageView
+                android:id="@+id/pi2"
+                android:layout_toRightOf="@+id/icon2"
+                android:layout_below="@+id/text2"
+                android:background="@drawable/food4"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageView
+                android:id="@+id/pi3"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/food2"
+                android:layout_below="@id/text2"
+                android:layout_toRightOf="@+id/pi2"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageView
+                android:layout_below="@id/text2"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/pi3"
+                android:background="@drawable/food3"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:layout_below="@+id/pi2"
+                android:layout_toRightOf="@id/icon2"
+                android:layout_marginTop="20dp"
+                android:text="2分钟前"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginTop="13dp"
+                android:layout_below="@id/pi2"
+                android:layout_toRightOf="@+id/icon2"
+                android:layout_marginLeft="200dp"
+                android:src="@drawable/pinglun1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+    </com.youdu.ButtonTest.ObservableScrollView>
+    <ImageView
+        android:id="@+id/add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/calculator_btn_addmini"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="55dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp" />
+    </RelativeLayout>

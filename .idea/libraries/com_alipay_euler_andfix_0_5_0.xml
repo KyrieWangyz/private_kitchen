@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.alipay.euler:andfix-0.5.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/ba398ae26f203b73bee71198a3ba486afa58b93f/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/ba398ae26f203b73bee71198a3ba486afa58b93f/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alipay.euler/andfix/0.5.0/73f6ec2b15bfe278a1bed60c6fc4a2ed786e6f91/andfix-0.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

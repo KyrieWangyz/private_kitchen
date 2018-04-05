@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.cleverlin.okhttptest.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/food1"
+        android:textSize="50dp"
+        android:hint="食材1"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/food2"
+        android:textSize="50dp"
+        android:hint="食材2"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/food3"
+        android:textSize="50dp"
+        android:hint="食材3"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:id="@+id/submit"
+        android:text="提交"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_recylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

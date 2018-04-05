@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/satu"
+        android:text="请选择性别"
+        android:textSize="25dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#443C33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginLeft="45dp"
+        android:src="@mipmap/register_btn_man"
+        android:id="@+id/man"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="230dp"/>
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="45dp"
+        android:src="@mipmap/register_btn_woman"
+        android:layout_marginTop="230dp"
+        android:id="@+id/girl"
+        android:layout_width="130dp"
+        android:layout_height="130dp" />
+</RelativeLayout>

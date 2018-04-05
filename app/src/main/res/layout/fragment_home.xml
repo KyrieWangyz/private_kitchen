@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.myFragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/rollviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        app:rollviewpager_play_delay="3000"
+        app:rollviewpager_hint_paddingBottom="8dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/mid_linear"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rollviewpager"
+        android:layout_alignParentStart="true">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <RelativeLayout
+            android:id="@+id/getExp_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/getExp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/getExpress"
+                android:textColor="@color/colorUnclick"
+                />
+
+            <View
+                android:id="@+id/getExp_line"
+                android:layout_width="26dp"
+                android:layout_height="3dp"
+                android:background="@color/colorUnclick"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/histroy_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/histroy_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/history"
+                android:textColor="@color/colorUnclick"
+                />
+
+            <View
+                android:id="@+id/histroy_line"
+                android:layout_width="26dp"
+                android:layout_height="3dp"
+                android:background="@color/colorUnclick"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mid_linear">
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>

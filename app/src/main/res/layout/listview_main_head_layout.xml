@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/rollviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+
+        app:rollviewpager_play_delay="3000"
+        app:rollviewpager_hint_paddingBottom="8dp"
+        />
+
+    <LinearLayout
+
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mid_linear"
+        android:layout_width="320dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/rollviewpager"
+        >
+    <View
+        android:layout_width="23dp"
+        android:layout_height="wrap_content"
+        />
+    <RelativeLayout
+
+        android:id="@+id/recommand_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:id="@+id/recommand_picture"
+            android:src="@mipmap/home_icon_recommend"
+            android:layout_width="50dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/recommand_picture"
+
+            android:id="@+id/recommand_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="推荐食谱"
+            android:textSize="12dp"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    <RelativeLayout
+
+        android:id="@+id/search_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <ImageView
+            android:layout_marginTop="11dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/search_picture"
+            android:src="@mipmap/home_icon_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/search_picture"
+
+            android:id="@+id/search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索食谱"
+            android:textSize="12dp"/>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="23dp"
+        android:layout_height="wrap_content"
+        />
+
+    <RelativeLayout
+
+        android:id="@+id/personal_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <ImageView
+            android:layout_marginTop="11dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/personal_picture"
+            android:src="@mipmap/home_icon_personal"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/personal_picture"
+
+            android:id="@+id/personal_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="私人订制"
+            android:textSize="12dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+
+
+        <RelativeLayout
+
+            android:id="@+id/mn_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <ImageView
+                android:layout_marginTop="11dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/mn_picture"
+                android:src="@mipmap/personal_icon_record"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/mn_picture"
+
+                android:id="@+id/mn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="情景模拟"
+                android:textSize="12dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:src="@color/colorMain"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@+id/mid_linear"
+        android:layout_marginTop="10dp"
+        android:id="@+id/color"
+        android:layout_width="13dp"
+        android:layout_height="25dp" />
+    <TextView
+        android:layout_toRightOf="@+id/color"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@+id/mid_linear"
+        android:textSize="20sp"
+        android:text="文章推荐"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>

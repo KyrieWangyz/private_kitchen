@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/breakfast"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/suggest_icon_breakfast"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:textSize="25dp"
+            android:text="早餐"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/breakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/calculator_btn_add"
+            />
+    </RelativeLayout>
+    <ImageView
+
+        android:background="#CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/breakf"
+        android:layout_width="match_parent"
+        android:layout_height="119dp">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/first"
+            android:text="牛奶"
+            android:textSize="20dp"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/first1"
+            android:text="20大卡"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/dk"
+            />
+        <TextView
+            android:id="@+id/dk"
+            android:text="千卡/克"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:background="#CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="?android:attr/listDivider"
+        />
+    <ImageView
+        android:background="#CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/lunch"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/suggest_icon_lunch"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:textSize="25dp"
+            android:text="午餐"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/lunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/calculator_btn_add"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:background="#CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <RelativeLayout
+        android:id="@+id/dinnersa"
+        android:layout_width="match_parent"
+        android:layout_height="119dp">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/dinner1"
+            android:text="牛奶"
+            android:textSize="20dp"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/dinner2"
+            android:text="20大卡"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/dk2"
+            />
+        <TextView
+            android:id="@+id/dk2"
+            android:text="千卡/克"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:background="#CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="?android:attr/listDivider"
+        />
+    <ImageView
+        android:background="#CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/dinner"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/suggest_icon_dinner"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:textSize="25dp"
+            android:text="晚餐"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/calculator_btn_add"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:background="#CCCCCC"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <RelativeLayout
+        android:id="@+id/lun"
+        android:layout_width="match_parent"
+        android:layout_height="119dp">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/din1"
+            android:text="牛奶"
+            android:textSize="20dp"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:id="@+id/din2"
+            android:text="20大卡"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/dk1"
+            />
+        <TextView
+            android:id="@+id/dk1"
+            android:text="千卡/克"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

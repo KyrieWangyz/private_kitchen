@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/cream"
+        android:background="@mipmap/cream"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="132dp"
+        android:layout_below="@+id/cream_img"
+        android:layout_toRightOf="@+id/cream_img"
+        android:layout_toEndOf="@+id/cream_img"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp" />
+    <ImageView
+        android:id="@+id/cream_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+
+        android:id="@+id/album"
+        android:background="@mipmap/calculator_icon_plussign_initial"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignBaseline="@+id/cream"
+        android:layout_alignBottom="@+id/cream"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

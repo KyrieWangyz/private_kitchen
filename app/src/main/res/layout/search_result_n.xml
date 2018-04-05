@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="70dp">
+
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="3.5dp"
+        android:id="@+id/food_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_marginLeft="14dp"
+            android:orientation="vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:text="杏子馅饼"
+                android:textSize="18sp"
+                android:id="@+id/food_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="配料："
+                    android:textSize="11sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/material"
+                    android:layout_marginTop="8dp"
+                    android:text="鸡蛋 胡椒粉。。。"
+                    android:textSize="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

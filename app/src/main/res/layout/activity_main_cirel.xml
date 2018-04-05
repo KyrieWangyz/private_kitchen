@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/firstRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@mipmap/personal_bg"
+        >
+    
+    <com.youdu.view.CircleProgressView
+        android:id="@+id/circleProgressbar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true" />
+        <com.youdu.view.CircleProgressView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/circleProgressbarleft"
+            android:layout_width="65dp"
+            android:layout_height="65dp" />
+        <com.youdu.view.CircleProgressView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:id="@+id/circleProgressbarright"
+            android:layout_width="65dp"
+            android:layout_height="65dp" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"
+            android:id="@+id/text"
+            android:text="今天摄入热量太少了"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="320dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@mipmap/personal_icon_recipe"
+            android:id="@+id/personal_icon_recipe"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="28dp"/>
+        <TextView
+            android:layout_marginLeft="62dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="建议食谱"
+            android:layout_below="@+id/personal_icon_recipe" />
+        <ImageView
+            android:id="@+id/personal_icon_alter"
+            android:src="@mipmap/personal_icon_alter"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/personal_icon_recipe"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="49dp"
+            android:layout_marginEnd="28dp" />
+        <TextView
+            android:layout_marginRight="47dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/personal_icon_alter"
+            android:text="修改目标热量"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/personal_icon_calculator"
+            android:src="@mipmap/personal_icon_calculator"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+           android:layout_below="@+id/personal_icon_alter"
+            android:layout_marginTop="23dp"
+            android:layout_alignLeft="@+id/personal_icon_recipe"
+            android:layout_alignStart="@+id/personal_icon_recipe"
+
+             />
+        <TextView
+android:layout_marginLeft="7dp"
+            android:layout_alignLeft="@+id/personal_icon_calculator"
+            android:layout_below="@+id/personal_icon_calculator"
+            android:text="热量计算器"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignLeft="@+id/personal_icon_record"
+            android:layout_marginLeft="13dp"
+            android:layout_below="@+id/personal_icon_record"
+            android:text="记录饮食"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/personal_icon_record"
+            android:src="@mipmap/personal_icon_record"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/personal_icon_calculator"
+            android:layout_alignLeft="@+id/personal_icon_alter"
+            android:layout_alignStart="@+id/personal_icon_alter" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/top"
+                android:background="@drawable/mrtj"
+                android:layout_height="220dp"
+                android:layout_width="match_parent"
+                />
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/nav_return"
+                android:layout_width="28dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:layout_marginTop="73dp"
+                android:textSize="33sp"
+                android:text="情景模拟"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/linearLayout1"
+                android:layout_below="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/sr"
+                        android:src="@drawable/qjmn3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:textColor="#443C44"
+                        android:textSize="20sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/sr"
+                        android:text="生日"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/yh"
+                        android:src="@drawable/qjmn1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:textColor="#443C44"
+                        android:textSize="20sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/yh"
+                        android:text="烛光晚餐"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/jt"
+                        android:src="@drawable/qjmn2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:textColor="#443C44"
+                        android:textSize="20sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/jt"
+                        android:text="年夜饭"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/linearLayout2"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/sk"
+                        android:src="@drawable/qjmn5"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:textColor="#443C44"
+                        android:textSize="20sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/sk"
+                        android:text="烧烤"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/hg"
+                        android:src="@drawable/qjmn3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:textColor="#443C44"
+                        android:textSize="20sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/hg"
+                        android:text="聚餐"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/yx"
+                        android:src="@drawable/qjmn3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:textColor="#443C44"
+                        android:textSize="20sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/yx"
+                        android:text="夜宵"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:src="@color/color_999999"
+                    android:layout_width="330dp"
+                    android:layout_height="1dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_below="@+id/linearLayout2"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"></View>
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="人数"
+                    android:textColorHint="#aea3a3"
+                    android:textSize="30sp" />
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"></View>
+                <EditText
+                    android:textColorHint="#aea3a3"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:hint="口味"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"></View>
+
+            </LinearLayout>
+
+
+
+
+</RelativeLayout>

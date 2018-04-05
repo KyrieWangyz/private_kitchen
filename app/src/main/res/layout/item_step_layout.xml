@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+
+        android:layout_centerHorizontal="true"
+       android:background="@mipmap/iconbackground"
+        android:id="@+id/step_img"
+        android:layout_width="340dp"
+        android:layout_height="200dp" />
+    <RelativeLayout
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/step_img"
+        android:layout_alignRight="@+id/step_img"
+        android:layout_alignLeft="@+id/step_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/step_name"
+        android:textSize="23sp"
+        android:text="详细做菜步骤"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/step_name"
+            android:id="@+id/time"
+            android:textSize="25sp"
+            android:text="耗时："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@+id/time"
+            android:layout_alignTop="@+id/time"
+            android:text="时间"
+            android:textSize="25sp"
+            android:id="@+id/step_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/add"
+    android:layout_marginBottom="210dp"
+    android:layout_marginLeft="35dp"
+    android:layout_alignParentBottom="true"
+    android:background="@mipmap/calculator_btn_add"
+    android:layout_width="66dp"
+    android:layout_height="66dp" />
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="185dp"
+        android:background="@color/color_999999"
+        android:layout_width="300dp"
+        android:layout_height="2dp" />
+    <ListView
+        android:layout_marginBottom="210dp"
+
+        android:id="@+id/listview"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/clean"
+        android:layout_toStartOf="@+id/clean"></ListView>
+    <TextView
+        android:layout_marginLeft="40dp"
+        android:textColor="#666666"
+        android:text="总热量"
+        android:layout_alignParentBottom="true"
+        android:textSize="30sp"
+        android:id="@+id/kll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="130dp"
+        />
+    <TextView
+        android:text="0"
+        android:textSize="30sp"
+        android:layout_marginLeft="120dp"
+        android:layout_toRightOf="@+id/kll"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp"
+        android:id="@+id/kll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="30sp"
+        android:text="千焦"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/kll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="60dp"
+        android:textSize="20sp"
+        android:text="清空"
+        android:id="@+id/clean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
